@@ -17,7 +17,7 @@
 - Grade 4.9
 
 
-# 소스코드 Git Repository
+## 소스코드 Git Repository
 
 - Springboot application(서비스 동작 시 어플리케이션 소스코드는 필요없음)
   https://github.com/kimpy1111/springboot-sample-web
@@ -25,9 +25,10 @@
 - DevOps container system
   https://github.com/kimpy1111/kakao_devops
 
+
 ## 사전 구성 및 실행 방법
 
-### 사전구성
+### 사전 구성
 
 - 서비스 환경으로 접속하기 위한 호스트 추가(/etc/hosts, IpAddress는 서비스가 기동되고 있는 서버의 IP)
 
@@ -102,3 +103,18 @@
   - Blue-Green 무중단 배포
 
     ```bash ./devops.sh deploy```
+
+
+## 서비스 확인
+
+- 웹을 통한 서비스 확인
+
+  - spring.application.com 으로 접속(사전 호스트 설정 필요) -> 아래와 같은 페이지가 출력
+
+    ![image-20180829171320609](/var/folders/cy/c_gxls390p19nm67h9s9bqgw0000gn/T/abnerworks.Typora/image-20180829171320609.png)
+
+- nginx round robin 테스트
+
+  - 테스트 메시지를 생성 후, 컨테이너 스케일 아웃(1개에서 2개) 진행 -> 메시지 등록 -> 번갈아가며 메시지가 나오는 것을 확인할 수 있음
+
+![image-20180829171907358](/var/folders/cy/c_gxls390p19nm67h9s9bqgw0000gn/T/abnerworks.Typora/image-20180829171907358.png)
