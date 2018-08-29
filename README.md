@@ -1,8 +1,8 @@
 # DevOps
 
-## 개발 환경
+## 1. 개발 환경
 
-### 인프라 환경
+### 1-1. 인프라 환경
 
 * CentOS Linux release 7.5
 
@@ -10,14 +10,17 @@
 
 * Docker-compose 1.22.0
 
-### 어플리케이션 환경
+### 1-2. 어플리케이션 환경
 
 * Java 8
+
 * Spring boot 2.0.4
+
 * Grade 4.9
 
 
-## 소스코드 Git Repository
+
+## 2. 소스코드 Git Repository
 
 * Springboot application(서비스 동작 시 어플리케이션 소스코드는 필요없음)
   https://github.com/kimpy1111/springboot-sample-web
@@ -26,9 +29,10 @@
   https://github.com/kimpy1111/kakao_devops
 
 
-## 사전 구성 및 실행 방법
 
-### 사전 구성
+## 3. 사전 구성 및 실행 방법
+
+### 3-1. 사전 구성
 
 * 서비스 환경으로 접속하기 위한 호스트 추가(/etc/hosts, IpAddress는 서비스가 기동되고 있는 서버의 IP)
 
@@ -63,7 +67,7 @@
   * 도커 서비스 상태 확인
       ```sudo service docker status```
 
-### 실행 방법
+### 3-2. 실행 방법
 
 * 서비스 시작: 첫 시작시에는 Dockerfile을 토대로 Docker build 후 서비스가 기동
   * 디폴트 (어플리케이션 컨테이너 1개)
@@ -88,12 +92,16 @@
       ```bash ./devops.sh deploy```
 
 
-## 서비스 확인
+## 4. 서비스 확인
 
 * 웹을 통한 서비스 확인
+
   * spring.application.com 으로 접속(사전 호스트 설정 필요) -> 아래와 같은 페이지가 출력
-      ![image-20180829171320609](/var/folders/cy/c_gxls390p19nm67h9s9bqgw0000gn/T/abnerworks.Typora/image-20180829171320609.png)
+
+    ![1](/Users/philyoungkim/Desktop/1.png)
 
 * nginx round robin 테스트
+
   * 테스트 메시지를 생성 후, 컨테이너 스케일 아웃(1개에서 2개) 진행 -> 메시지 등록 -> 번갈아가며 메시지 출력
-  ![image-20180829171907358](/var/folders/cy/c_gxls390p19nm67h9s9bqgw0000gn/T/abnerworks.Typora/image-20180829171907358.png)
+
+    ![2](/Users/philyoungkim/Desktop/2.png)
