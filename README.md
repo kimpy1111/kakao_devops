@@ -4,9 +4,11 @@
 
 ### 인프라 환경
 
-* CentOS Linux release 7.5
-* Docker-ce 1.13.1
-* Docker-compose 1.22.0
+- CentOS Linux release 7.5
+
+- Docker-ce 1.13.1
+
+- Docker-compose 1.22.0
 
 ### 어플리케이션 환경
 
