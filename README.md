@@ -17,9 +17,9 @@
 - Grade 4.9
 
 
-# 소스코드 Git Repo
+# 소스코드 Git Repository
 
-- Springboot application
+- Springboot application(서비스 동작 시 어플리케이션 소스코드는 필요없음)
   https://github.com/kimpy1111/springboot-sample-web
 
 - DevOps container system
