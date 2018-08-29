@@ -1,14 +1,14 @@
 # DevOps
 
-##개발 환경
+## 개발 환경
 
-###인프라 환경
+### 인프라 환경
 
 * CentOS Linux release 7.5
 * Docker-ce 1.13.1
 * Docker-compose 1.22.0
 
-###어플리케이션
+### 어플리케이션 환경
 
 - Java 8
 
@@ -25,10 +25,9 @@
 - DevOps container system
   https://github.com/kimpy1111/kakao_devops
 
+## 사전 구성 및 실행 방법
 
-##사전 구성 및 실행 방법
-
-###사전구성
+### 사전구성
 
 - 서비스 환경으로 접속하기 위한 호스트 추가(/etc/hosts, IpAddress는 서비스가 기동되고 있는 서버의 IP)
 
@@ -68,7 +67,7 @@
 
     ```sudo service docker status```
 
-###실행 방법
+### 실행 방법
 
 - 서비스 시작: 첫 시작시에는 Dockerfile을 토대로 Docker build 후 서비스가 기동
 
