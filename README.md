@@ -70,35 +70,46 @@
 ### 3-2. 실행 방법
 
 * 서비스 시작: 첫 시작시에는 Dockerfile을 토대로 Docker build 후 서비스가 기동
+
   * 디폴트 (어플리케이션 컨테이너 1개)
       ```bash ./devops.sh start```
   * 스케일 옵션 (어플리케이션 컨테이너 n개)
       ```bash ./devops.sh start scale=n```
 
 * 서비스 스케일링
+
   * 스케일 조정(어플리케이션 컨테이너 n개)
       ```bash ./devops.sh scale n```
 
 * 서비스 중지
+
   * 서비스 중지
       ```bash ./devops.sh stop```
 
 * 서비스 재시작
+
   * 서비스 재시작
       ```bash ./devops.sh restart```
 
 * 서비스 배포
+
   * Blue-Green 무중단 배포
       ```bash ./devops.sh deploy```
+
+* 서비스 컨테이너에 구동 확인
+
+  * docker ps를 통한 컨테이너 확인
+
+    ```docker ps```
 
 
 ## 4. 서비스 확인
 
-* 웹을 통한 서비스 확인
+### 4-1. 웹 어플리케이션 확인
 
-  * spring.application.com 으로 접속(사전 호스트 설정 필요) -> 아래와 같은 페이지가 출력
+* spring.application.com 으로 접속(사전 호스트 설정 필요) -> 아래와 같은 페이지가 출력
 
-    ![1](/Users/philyoungkim/Desktop/1.png)
+  ![1](/Users/philyoungkim/Desktop/1.png)
 
 * nginx round robin 테스트
 
