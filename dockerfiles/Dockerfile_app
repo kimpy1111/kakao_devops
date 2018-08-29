@@ -1,0 +1,18 @@
+FROM openjdk:8-jdk
+
+RUN wget https://services.gradle.org/distributions/gradle-4.9-bin.zip \
+         && unzip gradle-4.9-bin.zip -d /opt \
+         && rm gradle-4.9-bin.zip
+
+ENV GRADLE_HOME /opt/gradle-4.9
+ENV PATH $PATH:/opt/gradle-4.9/bin
+
+RUN git clone https://github.com/kimpy1111/springboot-sample-web.git
+
+WORKDIR /springboot-sample-web
+RUN gradle build \
+    && mv ./build/libs/spring-boot-sample-web-ui-2.0.4.RELEASE.jar /ROOT.jar \
+    && rm -rf /springboot-sample-web
+
+ENTRYPOINT ["java", "-jar", "/ROOT.jar"]
+

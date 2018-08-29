@@ -1,0 +1,2 @@
+2018-08-26 15:17:58	304	GET /css/bootstrap.min.css HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15	http://192.168.211.138:8080/	192.168.211.1	-   
+2018-08-26 15:17:59	200	GET / HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15	-	192.168.211.1	904   

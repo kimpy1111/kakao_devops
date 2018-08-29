@@ -1,0 +1,16 @@
+version: '2'
+services:
+  app_green:
+    build:
+      context: ./dockerfiles
+      dockerfile: Dockerfile_app
+    expose:
+      - '8080'
+    volumes: 
+      - ./logs:/springboot-sample-web/logs
+    environment:
+      VIRTUAL_HOST: spring.application.com
+networks:
+  default:
+    external:
+      name: nginx-proxy
