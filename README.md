@@ -96,23 +96,17 @@
   * Blue-Green 무중단 배포
       ```bash ./devops.sh deploy```
 
-* 서비스 컨테이너에 구동 확인
-
-  * docker ps를 통한 컨테이너 확인
-
-    ```docker ps```
 
 
 ## 4. 서비스 확인
 
 ### 4-1. 웹 어플리케이션 확인
 
-* spring.application.com 으로 접속(사전 호스트 설정 필요) -> 아래와 같은 페이지가 출력
-
-  ![1](/Users/philyoungkim/Desktop/1.png)
+* spring.application.com 으로 접속(사전 호스트 설정 필요) -> Thymeleaf message 페이지 확인
 
 * nginx round robin 테스트
+  * 테스트 메시지를 생성 후, 컨테이너 스케일 아웃(1개에서 2개) 진행 -> 메시지 등록 -> 번갈아가며 메시지 출력 확인
 
-  * 테스트 메시지를 생성 후, 컨테이너 스케일 아웃(1개에서 2개) 진행 -> 메시지 등록 -> 번갈아가며 메시지 출력
+### 4-2. 서비스 쉘 명령어에 따른 컨테이너 구동 확인
 
-    ![2](/Users/philyoungkim/Desktop/2.png)
+- docker ps를 통한 컨테이너 확인 ```docker ps```
