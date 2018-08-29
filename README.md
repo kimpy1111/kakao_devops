@@ -36,7 +36,7 @@
 
 * 서비스 환경으로 접속하기 위한 호스트 추가(/etc/hosts, IpAddress는 서비스가 기동되고 있는 서버의 IP)
 
-  * <IpAddress>         spring.application.com
+  * IpAddress         spring.application.com
 
 * docker engine, docker-compose  사전 설치 필요
 
