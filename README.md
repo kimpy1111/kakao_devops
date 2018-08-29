@@ -110,3 +110,12 @@
 ### 4-2. 서비스 쉘 명령어에 따른 컨테이너 구동 확인
 
 - docker ps를 통한 컨테이너 확인 ```docker ps```
+
+### 4-3. log 및 설정 파일 저장 경로
+
+- 어플리케이션 로그 위치(호스트)
+  ```./kakao_devops/logs/```
+
+- nginx upstream 및 proxy_pass 정보 파일 위치(호스트)
+
+  ```./kakao_devops/conf.d/```
