@@ -16,7 +16,7 @@
 
 * Spring boot 2.0.4
 
-* Grade 4.9
+* Gradle 4.9
 
 
 
@@ -116,5 +116,3 @@
 - 어플리케이션 로그 위치(호스트) ```./kakao_devops/logs/```
 
 - nginx upstream 및 proxy_pass 정보 파일 위치(호스트) ```./kakao_devops/conf.d/```
-
-
