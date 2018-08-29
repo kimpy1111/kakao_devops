@@ -113,9 +113,8 @@
 
 ### 4-3. log 및 설정 파일 저장 경로
 
-- 어플리케이션 로그 위치(호스트)
-  ```./kakao_devops/logs/```
+- 어플리케이션 로그 위치(호스트) ```./kakao_devops/logs/```
 
-- nginx upstream 및 proxy_pass 정보 파일 위치(호스트)
+- nginx upstream 및 proxy_pass 정보 파일 위치(호스트) ```./kakao_devops/conf.d/```
 
-  ```./kakao_devops/conf.d/```
+
